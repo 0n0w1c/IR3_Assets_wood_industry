@@ -1,6 +1,6 @@
 # IR3 Assets: wood industry
 
-Adds a charcoal kiln to [Wood Industry](https://mods.factorio.com/mod/wood-industry) using IR3 graphical assets, if installed.  
+Adds a charcoal kiln and reskins [Wood Industry](https://mods.factorio.com/mod/wood-industry) using IR3 graphical assets, if installed.  
 *Breaking change: Charcoal can only be made in the charcoal kiln.*
 
 *Requires the manual installation of the Industrial Revolution 3 Asset Packs.*
