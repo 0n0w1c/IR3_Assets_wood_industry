@@ -1,0 +1,13 @@
+{
+    "name": "IR3_Assets_wood_industry",
+    "version": "0.0.1",
+    "title": "IR3 Assets: wood industry",
+    "author": "0n0w1c",
+    "description": "Adds a charcoal kiln to Wood Industry\nRequires the manual installation of IR3 Assets",
+    "factorio_version": "2.0",
+    "dependencies": [
+        "base",
+        "IR3_Assets_some_assembly_required",
+        "wood-industry"
+    ]
+}
