@@ -1,15 +1,76 @@
-local entity               = table.deepcopy(data.raw["furnace"]["stone-furnace"])
+local entity                  = table.deepcopy(data.raw["furnace"]["stone-furnace"])
 
-local SCALE                = 2 / 3
+local SCALE                   = 2 / 3
 
-entity.name                = "charcoal-kiln"
-entity.icon                = "__IndustrialRevolution3Assets1__/graphics/icons/64/stone-charcoal-kiln.png"
-entity.crafting_categories = { "charcoal" }
-entity.minable             = { mining_time = 0.2, result = "charcoal-kiln" }
-entity.next_upgrade        = nil
-entity.collision_box       = { { -0.9, -0.9 }, { 0.9, 0.9 } }
-entity.selection_box       = { { -1.0, -1.0 }, { 1.0, 1.0 } }
-entity.graphics_set        = {
+entity.name                   = "charcoal-kiln"
+entity.icon                   = "__IndustrialRevolution3Assets1__/graphics/icons/64/stone-charcoal-kiln.png"
+entity.crafting_categories    = { "charcoal" }
+entity.minable                = { mining_time = 0.2, result = "charcoal-kiln" }
+entity.next_upgrade           = nil
+entity.collision_box          = { { -0.9, -0.9 }, { 0.9, 0.9 } }
+entity.selection_box          = { { -1.0, -1.0 }, { 1.0, 1.0 } }
+
+entity.corpse                 = "medium-remnants"
+entity.dying_explosion        = "charcoal-kiln-explosion"
+
+entity.damaged_trigger_effect = {
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.070000000000000009,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            {
+                -0.5,
+                -0.5
+            },
+            {
+                0.5,
+                0.5
+            }
+        },
+        particle_name = "stone-particle",
+        probability = 0.66666666666666661,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    },
+    {
+        damage_type_filters = {
+            "fire",
+            "impact"
+        },
+        frame_speed = 1,
+        frame_speed_deviation = 0.1,
+        initial_height = 0.5,
+        initial_vertical_speed = 0.070000000000000009,
+        initial_vertical_speed_deviation = 0.1,
+        offset_deviation = {
+            {
+                -0.5,
+                -0.5
+            },
+            {
+                0.5,
+                0.5
+            }
+        },
+        particle_name = "wood-particle",
+        probability = 0.3333333333333333,
+        repeat_count = 1,
+        speed_from_center = 0.02,
+        speed_from_center_deviation = 0.01,
+        type = "create-particle"
+    }
+}
+
+entity.graphics_set           = {
     animation = {
         layers = {
             {

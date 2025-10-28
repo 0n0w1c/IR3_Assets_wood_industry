@@ -11,6 +11,7 @@ require("prototypes/recipe/charcoal")
 
 require("prototypes/item/woodchips")
 
+require("prototypes/explosion/charcoal-kiln-explosion")
 require("prototypes/entity/charcoal-kiln")
 require("prototypes/item/charcoal-kiln")
 require("prototypes/recipe/charcoal-kiln")
