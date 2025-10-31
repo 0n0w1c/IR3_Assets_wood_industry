@@ -1,3 +1,3 @@
 local recipe = data.raw["recipe"]["charcoal"]
 
-recipe.category = "charcoal"
+recipe.additional_categories = { "charcoal" }
