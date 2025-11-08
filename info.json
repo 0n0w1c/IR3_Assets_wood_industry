@@ -7,7 +7,7 @@
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0",
-        "IR3_Assets_some_assembly_required >= 0.1.4",
+        "IR3_Assets_some_assembly_required >= 0.1.2",
         "wood-industry >= 2.1.3"
     ]
 }
