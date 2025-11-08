@@ -27,6 +27,12 @@ if mods["quality"] and recipe then
     recycling.generate_self_recycling_recipe(recipe)
 end
 
+recipe = data.raw["recipe"]["coke-from-charcoal"]
+recipe.icons = {
+    { icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/charcoal.png",       shift = { -12, -12 },  scale = 0.4 },
+    { icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/graphitic-coke.png", draw_background = true }
+}
+
 require("prototypes/item/woodchips")
 
 recipe = data.raw["recipe"]["woodchips"]
